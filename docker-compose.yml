@@ -1,0 +1,9 @@
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: webserver
+    container_name: go-webserver
+    ports:
+      - 8080:8080
